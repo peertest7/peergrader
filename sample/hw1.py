@@ -37,7 +37,10 @@ def average(img1, img2):
     """
     # TODO: Remove the placeholder return value and
     # write your own implementation
-    return np.zeros_like(img1)
+    avg = img1.copy()
+    avg += img2
+    avg /= 2
+    return avg
     
 def lighten(img1, img2):
     """Performs the "lighten" blend operation on two images
